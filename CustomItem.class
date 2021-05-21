@@ -1,10 +1,10 @@
-package me.Kidalder.itemBuilder;
-
+package me.Kidalder.FlagWars.Items;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.bukkit.ChatColor;
 import org.bukkit.Color;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
@@ -23,7 +23,7 @@ public class CustomItem extends ItemStack {
 		this.setType(type);
 		this.setAmount(amount);
 		ItemMeta meta = this.getItemMeta();
-		if (!name.equals(" ")) meta.setDisplayName(name);
+		if (!name.equals(" ")) meta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
 		if (!lore.isEmpty()) meta.setLore(lore);
 		if (!flags.isEmpty()) for (ItemFlag flag : flags) meta.addItemFlags(flag);
 		meta.setUnbreakable(breakable);
@@ -43,7 +43,7 @@ public class CustomItem extends ItemStack {
 		this.setType(type);
 		this.setAmount(amount);
 		ItemMeta meta = this.getItemMeta();
-		if (!name.equals(" ")) meta.setDisplayName(name);
+		if (!name.equals(" ")) meta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
 		if (!lore.isEmpty()) meta.setLore(lore);
 		if (!flags.isEmpty()) for (ItemFlag flag : flags) meta.addItemFlags(flag);
 		meta.setUnbreakable(breakable);
@@ -67,7 +67,7 @@ public class CustomItem extends ItemStack {
 		this.setType(type);
 		this.setAmount(amount);
 		ItemMeta meta = this.getItemMeta();
-		if (!name.equals(" ")) meta.setDisplayName(name);
+		if (!name.equals(" ")) meta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
 		if (!lore.isEmpty()) meta.setLore(lore);
 		if (!flags.isEmpty()) for (ItemFlag flag : flags) meta.addItemFlags(flag);
 		meta.setUnbreakable(breakable);
@@ -90,7 +90,7 @@ public class CustomItem extends ItemStack {
 		this.setType(type);
 		this.setAmount(amount);
 		ItemMeta meta = this.getItemMeta();
-		if (!name.equals(" ")) meta.setDisplayName(name);
+		if (!name.equals(" ")) meta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
 		if (!lore.isEmpty()) meta.setLore(lore);
 		if (!flags.isEmpty()) for (ItemFlag flag : flags) meta.addItemFlags(flag);
 		meta.setUnbreakable(breakable);
