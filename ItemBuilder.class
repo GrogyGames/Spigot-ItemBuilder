@@ -1,9 +1,10 @@
-package me.Kidalder.itemBuilder;
+package me.Kidalder.FlagWars.Items;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import org.bukkit.ChatColor;
 import org.bukkit.Color;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
@@ -88,7 +89,7 @@ public class ItemBuilder {
 	}
 	
 	public ItemBuilder addLore(String lore) {
-		this.itemLore.add(lore);
+		this.itemLore.add(ChatColor.translateAlternateColorCodes('&', lore));
 		return this;
 	}
 	
